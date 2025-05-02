@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Price Prediction</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Property Price Prediction</h1>
+
+      <div class="form-container">
+        <h2>Enter Property Details</h2>
+        <form id="property-form">
+          <div class="form-group">
+            <label for="area">Area (sqft):</label>
+            <input
+              type="number"
+              id="area"
+              name="area"
+              placeholder="Enter Area"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="bedroom">Number of Bedrooms:</label>
+            <input
+              type="number"
+              id="bedroom"
+              name="bedroom"
+              placeholder="Enter Bedrooms"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="bathroom">Number of Bathrooms:</label>
+            <input
+              type="number"
+              id="bathroom"
+              name="bathroom"
+              placeholder="Enter Bathrooms"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="location">Location:</label>
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="Enter Location"
+              required
+            />
+          </div>
+          <button type="submit" id="submit-btn">Predict Price</button>
+        </form>
+      </div>
+
+      <div id="results" class="results">
+        <h2>Prediction Results</h2>
+        <p id="rent-price">Rent Price:</p>
+        <p id="sell-price">Sell Price:</p>
+        <p id="inflation">Inflation between Rent and Sell:</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
